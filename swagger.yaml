@@ -1,0 +1,32 @@
+---
+swagger: "2.0"
+info:
+  version: "2021-01-12T13:50:24Z"
+  title: "teste"
+host: "umtw1q628k.execute-api.us-east-2.amazonaws.com"
+basePath: "/teste"
+schemes:
+- "https"
+paths:
+  /biggest-purchase-by-year:
+    post:
+      produces:
+      - "application/json"
+      responses:
+        200:
+          description: "200 response"
+          schema:
+            $ref: "#/definitions/Empty"
+  /list-by-value:
+    get:
+      produces:
+      - "application/json"
+      responses:
+        200:
+          description: "200 response"
+          schema:
+            $ref: "#/definitions/Empty"
+definitions:
+  Empty:
+    type: "object"
+    title: "Empty Schema"
